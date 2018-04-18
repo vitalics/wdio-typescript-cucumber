@@ -1,0 +1,41 @@
+{
+  "name": "wdio-typescript-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio configs/wdio.conf.js",
+    "postinstall": "npm i -g selenium-standalone webdriver-manager"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitalics/wdio-typescript-cucumber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitalics/wdio-typescript-cucumber/issues"
+  },
+  "homepage": "https://github.com/vitalics/wdio-typescript-cucumber#readme",
+  "dependencies": {
+    "cucumber-tsflow": "^2.2.0",
+    "typescript": "^2.8.1",
+    "webdriverio": "^4.12.0"
+  },
+  "devDependencies": {
+    "@types/cucumber": "^4.0.2",
+    "@types/dotenv": "^4.0.3",
+    "@types/node": "^9.6.5",
+    "@types/webdriverio": "^4.10.1",
+    "dotenv": "^5.0.1",
+    "reflect-metadata": "^0.1.12",
+    "ts-lint": "^4.5.1",
+    "ts-node": "^6.0.0",
+    "tsconfig-paths": "^3.3.1",
+    "wdio-cucumber-framework": "^2.1.0",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-typescript-service": "0.0.3",
+    "wdio-visual-regression-service": "^0.9.0"
+  }
+}

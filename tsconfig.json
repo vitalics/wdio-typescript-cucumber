@@ -1,0 +1,57 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "allowUnreachableCode": false,
+        "alwaysStrict": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "isolatedModules": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "pretty": true,
+        "strictPropertyInitialization": true,
+        "strictNullChecks": true,
+        "strict": true,
+        "strictFunctionTypes": true,
+        "allowJs": true,
+        "lib": [
+            "es2015",
+            "es2016",
+            "es2017",
+            "es2018",
+            "esnext"
+        ],
+        "baseUrl": "./src",
+        "rootDirs": [
+            "./src",
+            "./environments"
+        ],
+        "paths": {
+            "@doodle/environments": [
+                "../environments"
+            ],
+            "@doodle/utils":[
+                "../utils"
+            ],
+            "@doodle/page_objects":[
+                "../page_objects"
+            ],
+            "@doodle/components":[
+                "../components"
+            ],
+            "@doodle/third-party":[
+                "../third-party"
+            ],
+            "@doodle/types":[
+                "../types"
+            ],
+            "@doodle/constants":[
+                "../constants"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
