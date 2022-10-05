@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/wdio configs/wdio.conf.js",
-    "postinstall": "npm i -g selenium-standalone webdriver-manager"
+    "postinstall": "npm i -g selenium-standalone webdriver-manager",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,10 @@
   },
   "homepage": "https://github.com/vitalics/wdio-typescript-cucumber#readme",
   "dependencies": {
-    "cucumber-tsflow": "^2.2.0",
+    "cucumber-tsflow": "^3.0.2",
     "typescript": "^2.8.1",
-    "webdriverio": "^4.12.0"
+    "webdriverio": "^5.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/cucumber": "^4.0.2",
@@ -37,5 +40,6 @@
     "wdio-selenium-standalone-service": "0.0.10",
     "wdio-typescript-service": "0.0.3",
     "wdio-visual-regression-service": "^0.9.0"
-  }
+  },
+  "snyk": true
 }
